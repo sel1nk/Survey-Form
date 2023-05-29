@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+      <label for="name" id="name-label">Name<input id="name" type="text" required placeholder="Enter your name"></input></label>
+      <label for="email" id="email-label">Email<input id="email" type="email" required placeholder="Enter your Email"></input></label>
+      <label for="number" id="number-label">Age <p id="optional"> (optional)</p><input id="number" type="number" placeholder="Enter your age" min="15" max="100"></input></label>
+      <label for="dropdown">How did you hear about us?
+          <select id="dropdown">
+            <option id="current" value="">Select current role</option>
+            <option value="1">Full time job</option>
+            <option value="2">Full time learner</option>
+            <option value="3">Student</option>
+            <option value="4">Prefer not to say</option>
+            <option value="5">Other</option>
+          </select>
+        </label>
+        <label for="def">Would you recommend freeCodeCamp to a friend?<br><input id="def" name="question" type="radio" class="inline" value="definite"></input>Definitely</label>
+        <label for="maybe"><input id="maybe" name="question" type="radio" class="inline" value="may-be"></input>Maybe</label>
+        <label for="not-sure"><input id="not-sure" name="question" type="radio" class="inline" value="undecided"></input>Not sure</label>
+        <label>What would you like to see improved? <p id="optional"> (Check all that apply)</p> </label>
+        <label><input type="checkbox" class="inline" value="f-end">Front-end Projects</input></label>
+        <label><input type="checkbox" class="inline" value="b-end">Back-end Projects</input></label>
+        <label><input type="checkbox" class="inline" value="data">Data Visualization</input></label>
+        <label><input type="checkbox" class="inline" value="challenges">Challenges</input></label>
+        <label><input type="checkbox" class="inline" value="OSC">Open Source Community</input></label>
+        <label><input type="checkbox" class="inline" value="gitter">Gitter help rooms</input></label>
+        <label><input type="checkbox" class="inline" value="vids">Videos</input></label>
+        <label><input type="checkbox" class="inline" value="meet">City Meetups</input></label>
+        <label><input type="checkbox" class="inline" value="wiki">Wiki</input></label>
+        <label><input type="checkbox" class="inline" value="forum">Forum</input></label>
+        <label><input type="checkbox" class="inline" value="courses">Additional Courses</input></label>
+        <label for="comments">Any comments or suggestions?
+          <textarea id="comments" placeholder="Enter your comment here..."></textarea>
+        </label>
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </body>
+</html>
